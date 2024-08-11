@@ -1,0 +1,156 @@
+
+body {
+    background-image: url('https://i.pinimg.com/474x/6d/d7/b6/6dd7b6636e48d3bc647f11111dba29e8.jpg');
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login Page Styling */
+#loginForm {
+    width: 300px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#loginForm input[type="email"],
+#loginForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#loginForm .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#loginForm .btn:hover {
+    background-color: #4cae4c;
+}
+
+#loginForm .forgotPassword {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#loginForm .forgotPassword:hover {
+    text-decoration: underline;
+}
+
+#loginForm .or {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.google-github {
+    display: flex;
+    justify-content: space-between;
+}
+
+.google-btn,
+.github-btn {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+
+.google-btn img:hover,
+.github-btn img:hover {
+    transform: scale(1.1); /* Scale up image slightly on hover */
+}
+
+.google-btn img,
+.github-btn img {
+    margin-right: 8px;
+    width: 50px; /* Set the width of the image */
+    height: 50px; /* Set the height of the image */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+/* Home Page Styling */
+.form-todo {
+    width: 300px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+}
+
+.todo-btn {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.todo-btn:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    width: 300px;
+    margin: 20px auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logout {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logout:hover {
+    background-color: #c9302c;
+}

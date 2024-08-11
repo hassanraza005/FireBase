@@ -1,0 +1,110 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Form container */
+.form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input, select, .btn {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+/* Button styles */
+.cities-btn, .reset {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.cities-btn:hover, .reset:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.cities-btn:active, .reset:active {
+    transform: translateY(1px);
+}
+
+/* Form and button animations */
+@keyframes formFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form {
+    animation: formFadeIn 1s ease-in-out;
+}
+
+.cities-btn, .reset {
+    animation: buttonFadeIn 1s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    background: white;
+    color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateX(10px);
+}

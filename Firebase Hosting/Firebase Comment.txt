@@ -1,0 +1,14 @@
+                                             FIREBASE.TXT;
+
+node -v
+firebase tool
+firebase login
+                                  AFTER PROJECT CREATED ;
+firebase init 
+*configure file select 
+*existing project
+
+                                            AFTER HOSTING;
+firebase deploy
+
+
